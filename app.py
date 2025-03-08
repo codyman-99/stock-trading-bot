@@ -21,3 +21,18 @@ threading.Thread(target=fetch_stock_price, daemon=True).start()
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=10000)
+    
+    from webull import webull
+
+wb = webull()
+
+# Replace with your Webull login credentials
+email = "your_email@example.com"
+password = "your_password"
+
+# Login to Webull
+wb.login(email=email, password=password)
+
+# Verify login success
+account_id = wb.get_account_id()
+print(f"✅ Webull Login Successful! Account ID: {account_id}")
