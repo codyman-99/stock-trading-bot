@@ -36,6 +36,6 @@ wb.login(email=email, password=password)
 # Verify login success
 account_id = wb.get_account_id()
 print(f"✅ Webull Login Successful! Account ID: {account_id}")
-print(\"Attempting to log into Webull...")
+print("Attempting to log into Webull...")
 wb.login(email=email, password=password)
-print(\"✅ Webull login function executed.")
+print("✅ Webull login function executed.")
