@@ -31,7 +31,7 @@ email = "your_email@example.com"
 password = "your_password"
 
 # Login to Webull
-print(\"🚀 Starting Webull login process...\")
+print("🚀 Starting Webull login process...")
 try:
     wb.login(email=email, password=password)
     account_id = wb.get_account_id()
