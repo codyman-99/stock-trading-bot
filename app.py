@@ -35,6 +35,6 @@ print("🚀 Starting Webull login process...")
 try:
     wb.login(email=email, password=password)
     account_id = wb.get_account_id()
-    print(f\"✅ Webull Login Successful! Account ID: {account_id}\")
+    print(f"✅ Webull Login Successful! Account ID: {account_id}")
 except Exception as e:
-    print(f\"❌ Webull Login Failed: {e}\")
+    print(f"❌ Webull Login Failed: {e}")
