@@ -31,11 +31,10 @@ email = "your_email@example.com"
 password = "your_password"
 
 # Login to Webull
-wb.login(email=email, password=password)
-
-# Verify login success
-account_id = wb.get_account_id()
-print(f"✅ Webull Login Successful! Account ID: {account_id}")
-print("Attempting to log into Webull...")
-wb.login(email=email, password=password)
-print("✅ Webull login function executed.")
+print(\"🚀 Starting Webull login process...\")
+try:
+    wb.login(email=email, password=password)
+    account_id = wb.get_account_id()
+    print(f\"✅ Webull Login Successful! Account ID: {account_id}\")
+except Exception as e:
+    print(f\"❌ Webull Login Failed: {e}\")
